@@ -31,17 +31,8 @@
 
 In the 21st century we are finally witnessing the legalization of CANNABIS. America has led the charge to decriminalize medical and recreational use of marijuana.    
 
-Cannabis is now legal in 19 states- but not on the federal level. This means that small business owners such as dispensaries, manufacturers, & vendors cannot legally have a bank account or credit line.
+Cannabis is now legal in 19 states- but not on the federal level. This means that small business owners such as dispensaries, manufacturers, & vendors cannot legally have a bank account or credit line. Cannabis customers must withdraw cash from their bank accounts to make a purchase. Cannabis business owners have to operate solely with cash. This is a complex problem and has to be addressed on a federal level. In the meantime we would like to introduce a FinTech solution: BUDDY Token - Ethereum based cryptocurrency .
 
-Cannabis customers must withdraw cash from their bank accounts to make a purchase.
-
-Cannabis business owners have to operate solely with cash. 
-
-This is a complex problem and has to be addressed on a federal level.
-
-In the meantime we would like to introduce a FinTech solution:
-
-BUDDY Token - Ethereum based cryptocurrency .
 
 ##### WHY CRYPTO?
 
@@ -77,6 +68,7 @@ Moreover Etherium is an investable asset- which grows over time, offers a hedge 
 
 ### Data Collection and Preparation
 
+
 <img width="502" alt="Screen Shot 2021-09-02 at 7 54 57 PM" src="https://user-images.githubusercontent.com/80833988/131943655-e0063bde-0903-4f00-9e26-389c5ca33bab.png">
 
 
@@ -85,7 +77,7 @@ Remix IDE used to interact with Etherium blockchain, create and deploy smart con
 
 OpenZeppelin provides security products to build, automate, and operate decentralized applications. We also protect leading organizations by performing security audits on their systems and products.
 
-MetaMask allows users to store and manage account keys, broadcast transactions, send and receive Ethereum-based cryptocurrencies and tokens, and securely connect to decentralized applications through a compatible web browser or the mobile app's built-in browser. For the purpose of challange we will create an enviroment and use paper trade Etherium to showcase crowdsale of our Token
+MetaMask allows users to store and manage account keys, broadcast transactions, send and receive Ethereum-based cryptocurrencies and tokens, and securely connect to decentralized applications through a compatible web browser or the mobile app's built-in browser. For the purpose of challange we will create an environment and use paper trade Etherium to showcase crowdsale of our Token
 
 Ganache allows us to quickly fire up a personal Ethereum blockchain which you can use to run tests, execute commands, and inspect state while controlling how the chain operates. we will use it in this challenge to create a personal blockchain for rapid Ethereum distributed application development and test our crowdsale contract in a safe and deterministic environment.
 
@@ -103,15 +95,40 @@ https://www.youtube.com/watch?v=ltaTwjhq5u8
 
 ##### BuddyToken.sol (ERC-20)
 
+Buddy (BUD) Token Smart Contract
+
+
 <img width="1103" alt="Screen Shot 2021-09-02 at 8 11 44 PM" src="https://user-images.githubusercontent.com/80833988/131945139-7c7552da-785d-4cd6-a489-e88ce2b6cc4c.png">
 
+- Creates a fungible token using the ERC-20 standard
+
+- Solidity Contract from the OpenZeppelin library
+
+- This contract manages the entire purchase process, allowing users to send ETH to the contract and in return receive BUD tokens.
+
+- Automatically mints BUD Tokens during purchase flow
+
+- Includes an Oracle to make API call for current ETH/BUD prices
  
 ##### BuddyNFT.sol (ERC-721)
 
+Buddy NFT Coupon Smart Contract 
+
+
 <img width="963" alt="Screen Shot 2021-09-02 at 8 14 07 PM" src="https://user-images.githubusercontent.com/80833988/131945266-40e99ed4-d5aa-42f3-97e0-74e20e6b6b0e.png">
 
+Creates NFT Coupons to disperse to customers for marketing purposes
 
-- Following video is demonstrating the application NFT contract for creating a coupon
+Allows Owner to mint new NFT coupons, and transfer to any wallet
+
+Users can transfer between each other
+
+NFT's stored on IPFS for decentralized storage (reduce gas fees)
+
+NFT data stored to view coupon history (owners, usage, etc.)  
+
+
+###### Following video is demonstrating the application NFT contract for creating a coupon
 
 
 https://user-images.githubusercontent.com/80833988/131944463-e379c6e8-929f-42d6-8285-eb19e970c375.mov
@@ -121,6 +138,7 @@ And this is the final version of an NFT coupon:
 https://user-images.githubusercontent.com/80833988/131944536-44c37dc3-31fc-4037-9a7b-8c0b62449cb2.mp4
 
 ##### Libraries
+
 We used following Open Zeppelin lib, some of them was not covered in the class
 
 ```
